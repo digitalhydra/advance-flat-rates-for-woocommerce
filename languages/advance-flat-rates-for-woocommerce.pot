@@ -1,0 +1,79 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: \n"
+"POT-Creation-Date: 2020-06-04 23:28+0000\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:49
+msgid "Advance Flat rate"
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:50
+msgid "Lets you charge a fixed rate for shipping with some options."
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:88
+msgid "Enter a cost (excl. tax) or sum, e.g. <code>10.00 * [qty]</code>."
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:88
+msgid ""
+"Use <code>[qty]</code> for the number of items, <br/><code>[cost]</code> for "
+"the total cost of items, and <code>[fee percent=\"10\" min_fee=\"20\" "
+"max_fee=\"\"]</code> for percentage based fees."
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:92
+msgid "Title"
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:94
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:99
+msgid "Cost"
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:108
+msgid "Apply to users with roles"
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:113
+msgid "Any role|Not Logged In"
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:117
+msgid "Minimum order amount"
+msgstr ""
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:120
+msgid ""
+"Users will need to spend this amount to get free shipping (if enabled above),"
+" leave empty for disable."
+msgstr ""
+
+#. Name of the plugin
+msgid "Advance Flat Rates for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Flat rate shipping method that let you filter by user role an minimum order"
+" value."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/digitalhydra/advance-flat-rates-for-woocommerce"
+msgstr ""
+
+#. Author of the plugin
+msgid "Jairo Rondon"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/digitalhydra"
+msgstr ""

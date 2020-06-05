@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Language: es_ES\n"
+"POT-Creation-Date: 2020-06-04 23:28+0000\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"PO-Revision-Date: 2020-06-04 23:55+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Project-Id-Version: Advance Flat Rates for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: Español\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Loco-Version: 2.4.0; wp-5.4.1"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:49
+msgid "Advance Flat rate"
+msgstr "Precios Fijos Avanzados"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:50
+msgid "Lets you charge a fixed rate for shipping with some options."
+msgstr "Permite cobrar un costo fijo de envío y agregar algunas condiciones."
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:88
+msgid "Enter a cost (excl. tax) or sum, e.g. <code>10.00 * [qty]</code>."
+msgstr ""
+"Ingrese un costo (excl. Impuestos) o una suma ej. <code>1000 * [qty]</code>"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:88
+msgid ""
+"Use <code>[qty]</code> for the number of items, <br/><code>[cost]</code> for "
+"the total cost of items, and <code>[fee percent=\"10\" min_fee=\"20\" "
+"max_fee=\"\"]</code> for percentage based fees."
+msgstr ""
+"Use <code>[qty]</code> para el número de ítems, <br/><code>[cost]</code> "
+"para el costo total de los ítems, y <code>[fee percent=\"10\" min_fee=\"20\" "
+"max_fee=\"\"]</code> para costos basados en porcentaje."
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:92
+msgid "Title"
+msgstr "Titulo"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:94
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+"Esto controla el título que ve el usuario durante el proceso de compra."
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:99
+msgid "Cost"
+msgstr "Costo"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:108
+msgid "Apply to users with roles"
+msgstr "Aplicar a usuarios con el rol"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:113
+msgid "Any role|Not Logged In"
+msgstr "Cualquier Rol | Sin Ingresar"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:117
+msgid "Minimum order amount"
+msgstr "Minimo de la orden"
+
+#: includes/class-advance-flat-rates-for-woocommerce-advance-flat-rate.php:120
+msgid ""
+"Users will need to spend this amount to get free shipping (if enabled above),"
+" leave empty for disable."
+msgstr ""
+"Los usuarios tendrán que comprar esta cantidad como mínimo para que el "
+"método se active, dejar vacío para deshabilitar"
+
+#. Name of the plugin
+msgid "Advance Flat Rates for WooCommerce"
+msgstr "Precios Fijos Avanzados para WooCommerce"
+
+#. Description of the plugin
+msgid ""
+"Flat rate shipping method that let you filter by user role an minimum order "
+"value."
+msgstr ""
+"Método de envío plano que permite filtrar por compra mínima y por rol de "
+"usuario."
+
+#. URI of the plugin
+msgid "https://github.com/digitalhydra/advance-flat-rates-for-woocommerce"
+msgstr "https://github.com/digitalhydra/advance-flat-rates-for-woocommerce"
+
+#. Author of the plugin
+msgid "Jairo Rondon"
+msgstr "Jairo Rondon"
+
+#. Author URI of the plugin
+msgid "https://github.com/digitalhydra"
+msgstr "https://github.com/digitalhydra"
