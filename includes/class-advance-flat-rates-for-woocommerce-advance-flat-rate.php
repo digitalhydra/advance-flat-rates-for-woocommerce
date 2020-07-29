@@ -117,7 +117,15 @@ class WC_Advance_Flat_Rate extends WC_Shipping_Method
 				'title'       => __('Minimum order amount', 'advance-flat-rates-for-woocommerce'),
 				'type'        => 'price',
 				'placeholder' => wc_format_localized_price(0),
-				'description' => __('Users will need to spend this amount to get free shipping (if enabled above), leave empty for disable.', 'advance-flat-rates-for-woocommerce'),
+				'description' => __('Users will need to spend this amount to enable this value, leave empty for disable.', 'advance-flat-rates-for-woocommerce'),
+				'default'     => '0',
+				'desc_tip'    => true,
+			),
+			'max_amount' => array(
+				'title'       => __('Maximum order amount', 'advance-flat-rates-for-woocommerce'),
+				'type'        => 'price',
+				'placeholder' => wc_format_localized_price(0),
+				'description' => __('Users will need to spend this amount to enable tis value, leave empty for disable.', 'advance-flat-rates-for-woocommerce'),
 				'default'     => '0',
 				'desc_tip'    => true,
 			),
@@ -233,15 +241,31 @@ class WC_Advance_Flat_Rate extends WC_Shipping_Method
 		$has_role = false; // True when user belongs in roles selected for this method.
 		$cost      = $this->get_option('cost');
 		$min      = $this->get_option('min_amount');
+		$max      = $this->get_option('max_amount');
 		$valid_roles      = $this->get_option('roles');
 
 		if ('' !== $cost) {
 			$has_costs    = true;
 
-			if ('' !== $min) {
+			if ('' !== $min  && is_numeric($min)) {
 				$cart_subtotal = $package['cart_subtotal'];
 				$has_cart_min = $cart_subtotal >= $min;
+
 				$has_costs = $has_cart_min;
+			}
+
+			if ('' !== $max && is_numeric($max)) {
+				$cart_subtotal = $package['cart_subtotal'];
+				$has_cart_max = $cart_subtotal <= $max;
+
+				$has_costs = $has_cart_max;
+			}
+			if ('' !== $min && '' !== $max && is_numeric($min) &&is_numeric($max)) {
+				$cart_subtotal = $package['cart_subtotal'];
+				$has_cart_min = $cart_subtotal >= $min;
+				$has_cart_max = $cart_subtotal <= $max;
+
+				$has_costs = $has_cart_min && $has_cart_max;
 			}
 
 			$rate['cost'] = $this->evaluate_cost(
